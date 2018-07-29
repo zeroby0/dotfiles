@@ -1,0 +1,59 @@
+/*.markdown-body::after { 
+    content: "Copyright (c) Dr. Madhav Rao, IIITB. The content of this website is support material for the 'Basic Electronics' course at IIIT Bangalore. Personal / Non-commercial use only. Maintained by Aravind Reddy V. Built with Docpress";
+    color: grey;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin: auto;
+}*/
+
+html .markdown-body .offliner-button{
+    padding-top: 24px;
+    margin-top:1em;
+    position:relative
+}
+html .markdown-body .offliner-button:after{
+    content:'';
+    display:table;
+    clear:both;
+    zoom:1
+}
+html .markdown-body .offliner-button:before{
+    display:inline-block;
+    font-family:ionicons;
+    content:'';
+    font-size:32px;
+    font-weight:400;
+    vertical-align:middle;
+    color:#1abc9c;
+    margin-right:16px
+}
+html .markdown-body .offliner-button a{
+    border:solid 1px #1abc9c;
+    border-radius:4px;
+    padding:5px 12px;
+    text-transform:uppercase;
+    font-size:.8em;
+    letter-spacing:.05em;
+    margin-left:16px
+}
+html .markdown-body .offliner-button a:hover{
+    text-decoration:none;
+    background:#1abc9c;
+    color:#fff
+}
+@media(min-width:960px){
+    html .markdown-body .offliner-button{
+        padding-right:100px;
+        padding-left:48px
+    }
+    html .markdown-body .offliner-button:before{
+        position:absolute;
+        top:11px;
+        left:0
+    }
+    html .markdown-body .offliner-button a{
+        position:absolute;
+        right:0;
+        top:20px
+    }
+}
