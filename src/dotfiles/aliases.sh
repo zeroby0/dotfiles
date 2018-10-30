@@ -14,7 +14,7 @@ alias xdl="xd 9"
 alias xdm="xd 10"
 
 # Because xda is most used
-alias x="cd /Users/aravind/Desktop && xda > /dev/null 2> /dev/null"
+alias x="cd $HOME/Desktop && xda > /dev/null 2> /dev/null"
 
 # Change to Desktop
 alias z="cd $HOME/Desktop/"
@@ -27,6 +27,9 @@ alias show='defaults write com.apple.finder AppleShowAllFiles YES; killall Finde
 
 # hide hidden files
 alias hide='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+
+# Recursively delete `.DS_Store` files
+alias cleanmac="find . -type f -name '*.DS_Store' -ls -delete"
 
 ########## git shorthand ##########
 
@@ -53,16 +56,11 @@ alias ni="npm install"
 alias dev="npm run dev"
 alias globals="npm list -g --depth=0"
  
-alias clean-up="rm -rf node_modules .next dist build packed"
-alias go="clean-up && i && a && dev"
+alias clean="rm -rf node_modules .next dist build packed"
+alias go="clean && i && a && dev"
 
-########## Zsh configuration ##########
 
-DOTFOLDER="~/.dotfile/"
-MYZSH="$DOTFOLDER/myzsh"
-ALIASES="$DOTFOLDER/alias.sh"
-FUNCS="$DOTFOLDER/func.sh"
-
+# Vars defines in myz.sh
 alias src="source $MYZSH"
 
 alias opza="s $MYZSH && src"

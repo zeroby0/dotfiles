@@ -3,13 +3,16 @@
 
 > For lazy people like me
 
+This is the documentation for my dotfiles. Most of them are useful terminal shorthands to do common things.
+
 ## One letter commands
 For most frequently performed tasks
 - `s` -  Open current directory in Sublime
 - `y` - Open current project root in Sublime
 - `x` - CD to foremost Finder window
 - `c` - CD to current project root
-- `z` - CD to ~/Desktop
+- `z` - CD to ~/Desktop 
+
 
 ## Two letter commands
 - `mx` - `Touch` a new file in PWD and open it in Sublime

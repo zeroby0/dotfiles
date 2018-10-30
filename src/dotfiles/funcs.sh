@@ -5,11 +5,11 @@ function xd() {
         #creating a file and sourcing it. 
         xdcmd="\$(osascript -e 'tell app \"Finder\" to return the POSIX path of (target of window $1 as alias)')"
         #creating in home, to avoid permission issues
-        echo -e "cd \"$xdcmd\"" > ~/.myscripts/.xdhlscript_12345
+        echo -e "cd \"$xdcmd\"" > $DOTFOLDER/.xdhlscript_12345
  
         #sourcing because parent returns to original dir after child is completed
-        . ~/.myscripts/.xdhlscript_12345
-        rm ~/.myscripts/.xdhlscript_12345
+        . $DOTFOLDER/.xdhlscript_12345
+        rm $DOTFOLDER/.xdhlscript_12345
     fi
 }
 
