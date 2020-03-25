@@ -9,7 +9,7 @@ curl -fsSLO "$GITHUBREPO/funcs.sh"
 curl -fsSLO "$GITHUBREPO/myz.sh"
 curl -fsSLO "$GITHUBREPO/subl"
 
-echo "source $HOME/.dotfolder/myz.sh" >> "$HOME/.zshrc"
+echo "source $HOME/.dotfiles/myz.sh" >> "$HOME/.zshrc"
 
 
 
