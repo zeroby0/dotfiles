@@ -1,7 +1,8 @@
 # Dotfiles
-<!--{h1:.massive-header.-with-tagline}-->
-
 > For lazy people like me
+
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/zeroby0/dotfiles/master/setup.sh)"`
+
 
 This is the documentation for my dotfiles. Most of them are useful terminal shorthands to do common things.
 

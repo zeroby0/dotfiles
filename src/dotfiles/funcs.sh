@@ -148,3 +148,19 @@ function zipit() {
     fi;
 }
 
+clippy() {
+    last=''
+    while :
+    do
+        current=$(pbpaste)
+
+        if [[ "$current" == "$last" ]]; then
+            /bin/sleep 0.3 > /dev/null
+        else
+            echo "Downloading $current"
+            wget -q $(pbpaste) &
+            last=$current
+        fi
+    done
+}
+

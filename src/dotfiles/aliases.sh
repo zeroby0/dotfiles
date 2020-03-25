@@ -83,6 +83,9 @@ alias avenv="source ./venv/bin/activate"
 alias ydl="youtube-dl "
 alias adl="youtube-dl --extract-audio --audio-format mp3 "
 
+alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/local/bin/airport"
+
+
 
 
 
