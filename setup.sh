@@ -1,8 +1,8 @@
-
-
 DOTFOLDER="$HOME/.dotfiles"
 GITHUBREPO="https://raw.githubusercontent.com/zeroby0/dotfiles/master/src/"
 
+cd $HOME
+curl -fsSLO "$GITHUBREPO/.hyper.js"
 mkdir $DOTFOLDER && cd $_
 curl -fsSLO "$GITHUBREPO/aliases.sh"
 curl -fsSLO "$GITHUBREPO/funcs.sh"
