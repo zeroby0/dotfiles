@@ -1,7 +1,7 @@
 
 
-$DOTFOLDER="$HOME/.dotfiles"
-$GITHUBREPO="https://raw.githubusercontent.com/zeroby0/dotfiles/master/src/"
+DOTFOLDER="$HOME/.dotfiles"
+GITHUBREPO="https://raw.githubusercontent.com/zeroby0/dotfiles/master/src/"
 
 mkdir $DOTFOLDER && cd $_
 curl -fsSLO "$GITHUBREPO/aliases.sh"
