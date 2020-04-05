@@ -53,6 +53,16 @@ function maketar() { tar cvzf "${1%%/}.tar.gz"  "${1%%/}/"; }
 # Create a ZIP archive of a file or folder.
 function makezip() { zip -r "${1%%/}.zip" "$1" ; }
 
+# Zip compress all the files in this folder
+function zipit() {
+    if [ $# -eq 0 ]; then
+        find . -name '.DS_Store' -type f -delete
+        zip -r -X "${PWD##*/}" *
+    else
+        find . -name '.DS_Store' -type f -delete
+        zip -r -X "$@" *
+    fi;
+}
 
 
 # convert video files to audio
@@ -146,16 +156,7 @@ function vget() {
 
 
  
-# Zip compress all the files in this folder
-function zipit() {
-    if [ $# -eq 0 ]; then
-        find . -name '.DS_Store' -type f -delete
-        zip -r -X "${PWD##*/}" *
-    else
-        find . -name '.DS_Store' -type f -delete
-        zip -r -X "$@" *
-    fi;
-}
+
 
 clippy() {
     last=''
