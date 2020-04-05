@@ -1,7 +1,7 @@
 # Dotfiles
 > For lazy people like me
 
-To install, run this in your terminal.
+To install, run this in your terminal.  
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/zeroby0/dotfiles/master/setup.sh)"`
 
 Best used with MacOS. You're should check the files before installing to prevent overriding stuff.
