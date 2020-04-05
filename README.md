@@ -1,8 +1,10 @@
 # Dotfiles
-> The missing Dotfiles for MacOS
+> For lazy people like me
 
 To install, run this in your terminal.
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/zeroby0/dotfiles/master/setup.sh)"`
+
+Best used with MacOS. You're advised to check the files before installing, so you won't override any settings you've made yourself.
 
 ## Most useful commands
 - `x` - CDs the terminal to window open in finder.
