@@ -13,15 +13,15 @@ function xd() {
     fi
 }
 
-# function ck() { 
-#     if [ -f $1 ] ; then
-#         echo "Target branch"
-#     else
-#         git checkout $1;
-#         git reset --hard;
-#         git clean -f -d;
-#     fi
-# }
+function ck() { 
+    if [ -f $1 ] ; then
+        echo "Target branch"
+    else
+        git checkout $1;
+        # git reset --hard;
+        # git clean -f -d;
+    fi
+}
 
 # Archives
  
@@ -134,6 +134,15 @@ function s() {
 }
 
 
+function vget() {
+    youtube-dl \
+    --write-all-thumbnails \
+    --embed-thumbnail \
+    --write-info-json \
+    --external-downloader aria2c \
+    "$@"
+}
+
 
 
  
@@ -163,4 +172,34 @@ clippy() {
         fi
     done
 }
+
+function slippy() {
+    # I couldn't think of a better name..
+    last=''
+    while :
+    do
+        current=$(pbpaste)
+
+        if [[ "$current" == "$last" ]]; then
+            /bin/sleep 0.3 > /dev/null
+        else
+            echo "Downloading $current"
+            aria2c "$(pbpaste)" &
+            last=$current
+        fi
+    done  
+}
+
+function acon() {
+    # Activates conda environment. Activates my Thesis env by default.
+    # You should change that.
+    source /Users/aravind/miniconda3/bin/activate
+
+    if [ $# -eq 0 ]; then
+        conda activate Thesis;
+    else
+        conda activate "$@";
+    fi;
+}
+
 

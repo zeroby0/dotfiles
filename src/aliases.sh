@@ -31,6 +31,11 @@ alias hide='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder
 # Recursively delete `.DS_Store` files
 alias cleanmac="find . -type f -name '*.DS_Store' -ls -delete"
 
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+
+alias ic="unset HISTFILE && echo 'unset histfile'" # Terminal Incognito. So that dangerous commands dont remain in history to be accidentally run again
+
+
 ########## git shorthand ##########
 
 alias cm="git add -A && git commit -a -m"

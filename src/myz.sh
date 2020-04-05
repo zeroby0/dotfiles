@@ -15,5 +15,3 @@ FUNCS="$DOTFOLDER/funcs.sh"
 
 source "$ALIASES"
 source "$FUNCS"
-
-x

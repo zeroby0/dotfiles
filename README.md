@@ -1,23 +1,19 @@
 # Dotfiles
-> For lazy people like me
+> The missing Dotfiles for MacOS
 
+To install, run this in your terminal.
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/zeroby0/dotfiles/master/setup.sh)"`
 
-
-This is the documentation for my dotfiles. Most of them are useful terminal shorthands to do common things.
-
-## One letter commands
-For most frequently performed tasks
-- `s` -  Open current directory in Sublime
-- `y` - Open current project root in Sublime
-- `x` - CD to foremost Finder window
-- `c` - CD to current project root
-- `z` - CD to ~/Desktop 
-
+## Most useful commands
+- `x` - CDs the terminal to window open in finder.
+- `z` - CDs to Desktop
+- `c` - CDs to Project Root. (Uses .git folder)
+- `s` - Opens file or folder in Sublime Text. Opens current directory if no args.
 
 ## Two letter commands
 - `mx` - `Touch` a new file in PWD and open it in Sublime
 - `mk` - Create a new folder and CD into it
+- `op` - Open current terminal directory in Finder
 
 ## git shorthand
 - `st` - git status
@@ -32,6 +28,7 @@ For most frequently performed tasks
 - `zipit` - Compress PWD without the pesky .DS_Store files
 - `show` - Show hidden files
 - `hide` - Hide hidden files
-- `hs` - Search in History
+- `hs` - Search in History.
+- `..` - CD to parent directory
 
 
