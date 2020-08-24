@@ -8,7 +8,6 @@ mkdir $DOTFOLDER && cd $_
 curl -fsSLO "$GITHUBREPO/aliases.sh"
 curl -fsSLO "$GITHUBREPO/funcs.sh"
 curl -fsSLO "$GITHUBREPO/myz.sh"
-curl -fsSLO "$GITHUBREPO/subl"
 
 echo "source $HOME/.dotfiles/myz.sh" >> "$HOME/.zshrc"
 source $HOME/.dotfiles/myz.sh
