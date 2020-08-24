@@ -68,9 +68,10 @@ alias go="clean && i && a && dev"
 # Vars defines in myz.sh
 alias src="source $MYZSH"
 
-alias opza="s $MYZSH && src"
-alias aliases="s $ALIASES && source $ALIASES"
-alias funcs="s $FUNCS && source $FUNCS"
+alias dot="code $DOTFOLDER"
+alias opza="s $MYZSH"
+alias aliases="s $ALIASES"
+alias funcs="s $FUNCS"
 
 # Pretty print PATH
 alias path='echo -e ${PATH//:/\\n}' 
